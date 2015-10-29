@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmp:ConflatedMap gml:id="Conflatedmap" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xmp="http://www.opengis.net/owc/1.0/examples/example1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/owc/1.0/examples/example1 spring_lineage.xsd">
+   <xmp:metadata xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml"/>
+   <xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000">
+			<xmp:source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+			<xmp:proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+			<xmp:sourcedname>
+				<xmp:SourcedName>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+					<xmp:Name_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+					<xmp:name>ConflatedMap_geoNameCollection_memberGeoName_fullName_499d2</xmp:name>
+				</xmp:SourcedName>            
+			</xmp:sourcedname>            
+			<xmp:sourcedadress>
+				<xmp:SourcedAdress>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+					<xmp:Adress_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+					<xmp:Adress>ConflatedMap_address_d662c</xmp:Adress>
+				</xmp:SourcedAdress> 
+			</xmp:sourcedadress>			
+			<xmp:sourcedpossition> 
+				<xmp:SourcedPossition>
+					<xmp:position>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+						<xmp:Possition_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+						<gml:Point gml:id="ConflatedMap_Position_cf842">
+							<gml:pos/>
+						</gml:Point>
+					</xmp:position>
+				</xmp:SourcedPossition>
+			</xmp:sourcedpossition> 
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>		
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000">
+			<xmp:source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+			<xmp:proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+			<xmp:sourcedname>
+				<xmp:SourcedName>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+					<xmp:Name_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+					<xmp:name>ConflatedMap_geoNameCollection_memberGeoName_fullName_2d658</xmp:name>
+				</xmp:SourcedName>            
+			</xmp:sourcedname>            
+			<xmp:sourcedadress>
+				<xmp:SourcedAdress>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+					<xmp:Adress_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+					<xmp:Adress>ConflatedMap_address_fe642</xmp:Adress>
+				</xmp:SourcedAdress> 
+			</xmp:sourcedadress>			
+			<xmp:sourcedpossition> 
+				<xmp:SourcedPossition>
+					<xmp:position>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
+						<xmp:Possition_Proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>
+						<gml:Point gml:id="ConflatedMap_Position_c7728">
+							<gml:pos/>
+						</gml:Point>
+					</xmp:position>
+				</xmp:SourcedPossition>
+			</xmp:sourcedpossition> 
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>	
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="ConflatedMapFeature_StructurePoints_84275">
+			<xmp:source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#NGAMap"/>
+			<xmp:proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>           
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="ConflatedMapFeature_StructurePoints_84356">
+			<xmp:source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#NGAMap"/>
+			<xmp:proces xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#52N_ConflationExecution_8c72d44edf"/>           
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>
+</xmp:ConflatedMap>
