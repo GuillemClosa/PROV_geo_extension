@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmp:NGAMap gml:id="NGAMap" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xmp="http://www.opengis.net/owc/1.0/examples/example1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/owc/1.0/examples/example1 spring_lineage.xsd">
+   <xmp:metadata xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml"/>
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="NGAFeature_StructurePoints_84356">
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/NGAMap_dataset.xml"/>	
+		<xmp:ConflatedFeature>
+	</xmp:conflatedfeature>
+	
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="NGAFeature_StructurePoints_84275">
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/NGAMap_dataset.xml"/>      
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>
+</xmp:NGAMap>
