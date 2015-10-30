@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<prov:document xmlns:prov="http://www.w3.org/ns/prov#" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/ns/prov# prov.xsd">
+
+   <prov:bundle prov:id="Conflatedmap_prov"> 
+      <prov:label>The provenance of the dataset resulting from conflating USGS Map Data and Open Street Map</prov:label>
+   </prov:bundle>
+
+   <prov:bundleContent prov:id="Conflatedmap_prov">
+<prov:entity prov:id= "conflatedmap"><!--gmd:LI_ProcessStep/output-->
+          <prov:label>Conflated map</prov:label>
+       </prov:entity>
+   
+      <prov:activity prov:id="PS_WPS_1"><!--//gmd:LI_ProcessStep-->
+       <prov:startTime>2013-11-21T16:05:00</prov:startTime>
+      <prov:endTime>2013-11-21T16:06:00</prov:endTime>
+         <prov:label>52North WPS conflation instance</prov:label>
+      </prov:activity>
+   
+      <prov:wasAssociatedWith>
+         <prov:activity prov:ref="PS_WPS_1"/>
+         <prov:agent prov:ref="JM_CREAF"/>
+         <prov:role>Processor</prov:role>
+      </prov:wasAssociatedWith>
+     
+      <prov:entity prov:id= "SC_USGS"><!--gmd:LI_Lineage/LI_Source-->
+         <prov:label>USGS map data</prov:label>
+      </prov:entity>
+      <prov:entity prov:id= "SC_OSM"><!--gmd:LI_Lineage/LI_Source-->
+         <prov:label>Open Street Map</prov:label>
+      </prov:entity>
+   
+      <prov:used>
+         <prov:activity prov:ref="PS_WPS_1"/>
+         <prov:entity prov:ref="SC_USGS"/>
+         <prov:label>The U.S.Geological Survey generates the Geological Soils Maps of United States</prov:label>
+      </prov:used>       
+      <prov:used>
+         <prov:activity prov:ref="PS_WPS_1"/>
+         <prov:entity prov:ref="SC_OSM"/>
+         <prov:label>OpenStreetMap (OSM) is a collaborative project to create a free editable map of the world</prov:label>
+      </prov:used>    
+      
+      <prov:wasGeneratedBy>
+         <prov:entity prov:ref="OWS10-conflatedmap" xmlns:prov="http://www.w3.org/ns/prov#"/>
+         <prov:activity prov:ref="PS_WPS_1"/>
+      </prov:wasGeneratedBy>   
+
+      <prov:wasDerivedFrom>
+         <prov:generatedEntity prov:ref="conflatedmap"/>
+         <prov:usedEntity prov:ref="SC_OSM"/>
+      </prov:wasDerivedFrom>   
+      <prov:wasDerivedFrom>
+         <prov:generatedEntity prov:ref="conflatedmap"/>
+         <prov:usedEntity prov:ref="SC_USGS"/>
+      </prov:wasDerivedFrom>
+
+<prov:agent prov:id="JM_CREAF"><!--//gmd:LI_ProcessStep/gmd:processor/gmd:CI_ResponsibleParty-->
+         <prov:label>Joan Masó</prov:label>
+         <prov:type >Person</prov:type>
+      </prov:agent>
+<prov:wasAttributedTo>
+         <prov:entity prov:ref="conflatedmap"></prov:entity>
+         <prov:agent prov:ref="JM_CREAF"></prov:agent>
+         <prov:label>The person that run the conflation process</prov:label>
+      </prov:wasAttributedTo>
+
+     <prov:softwareAgent prov:id="PyWPS"></prov:softwareAgent> 
+<prov:wasAssociatedWith>
+         <prov:entity prov:ref="conflatedmap"></prov:entity>
+         <prov:softwareAgent prov:ref="PyWPS"></prov:softwareAgent>
+         <prov:label>The software that was used in the conflation process</prov:label>
+      </prov:wasAssociatedWith>
+<prov:plan><!--link to wps-->
+         <prov:value></prov:value>
+      </prov:plan>
+   </prov:bundleContent>   
+</prov:document>
