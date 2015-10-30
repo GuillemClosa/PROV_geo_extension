@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmp:USGSMap gml:id="USGSMap" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xmp="http://www.opengis.net/owc/1.0/examples/example1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/owc/1.0/examples/example1 spring_lineage.xsd">
+   <xmp:metadata xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml"/>
+   <xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000">
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+			<xmp:sourcedname>
+				<xmp:SourcedName>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:name>USGS_name_6adb4</xmp:name>
+				</xmp:SourcedName>            
+			</xmp:sourcedname>            
+			<xmp:sourcedadress>
+				<xmp:SourcedAdress>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Adress>USGS_address_f9acb</xmp:Adress>
+				</xmp:SourcedAdress> 
+			</xmp:sourcedadress>			
+			<xmp:sourcedpossition> 
+				<xmp:SourcedPossition>
+					<xmp:position>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+						<gml:Point gml:id="USGSPosition_10c80">
+							<gml:pos/>
+						</gml:Point>
+					</xmp:position>
+				</xmp:SourcedPossition>
+			</xmp:sourcedpossition> 
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>		
+	<xmp:conflatedfeature>
+		<xmp:ConflatedFeature gml:id="USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000">
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+			<xmp:sourcedname>
+				<xmp:SourcedName>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:name>USGS_name_9dff6</xmp:name>
+				</xmp:SourcedName>            
+			</xmp:sourcedname>            
+			<xmp:sourcedadress>
+				<xmp:SourcedAdress>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Adress>USGS_address_b153f</xmp:Adress>
+				</xmp:SourcedAdress> 
+			</xmp:sourcedadress>			
+			<xmp:sourcedpossition> 
+				<xmp:SourcedPossition>
+					<xmp:position>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+						<gml:Point gml:id="USGSPosition_ace94">
+							<gml:pos/>
+						</gml:Point>
+					</xmp:position>
+				</xmp:SourcedPossition>
+			</xmp:sourcedpossition> 
+		</xmp:ConflatedFeature>		
+	</xmp:conflatedfeature>
+</xmp:USGSMap>
