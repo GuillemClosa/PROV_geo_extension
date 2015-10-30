@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmp:SpringCollection gml:id="Conflatedmap" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xmp="http://www.opengis.net/owc/1.0/examples/example1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/owc/1.0/examples/example1 spring_lineage.xsd">
+   <xmp:provenance xlink:href="/Provenance/SpringDataSetW3Cprov.xml#Conflatedmap"/>
+   <xmp:spring>
+      <xmp:Spring gml:id="ID_SPRING_1">
+         <xmp:w3cSource xlink:href="W3Cprov_dataset_level.xml#SC_USGS"/>
+         <xmp:w3cProces xlink:href="W3Cprov_dataset_level.xml#PS_WPS_1"/>
+         <xmp:position>
+            <gml:Point gml:id="ID_POS_1">
+               <gml:pos/>
+            </gml:Point>
+         </xmp:position>
+         <xmp:flow>4</xmp:flow>
+         <xmp:name>Gold spring</xmp:name>
+      </xmp:Spring>
+   </xmp:spring>
+   <xmp:spring>
+      <xmp:Spring gml:id="ID_SPRING_2">
+         <xmp:w3cSource xlink:href="W3Cprov_dataset_level.xml#SC_USGS"/>
+         <xmp:w3cProces xlink:href="W3Cprov_dataset_level.xml#PS_WPS_1"/>
+         <xmp:position>
+            <gml:Point gml:id="ID_POS_2">
+               <gml:pos/>
+            </gml:Point>
+         </xmp:position>
+         <xmp:flow>4</xmp:flow>
+         <xmp:sourcedName>
+            <xmp:SourcedName>
+               <xmp:isoSourcedName xlink:href="W3Cprov_dataset_level.xml#SC_OSM"/>
+               <xmp:w3cSourcedName xlink:href="W3Cprov_dataset_level.xml#SC_OSM"/>
+               <xmp:name>Silver spring</xmp:name>
+            </xmp:SourcedName>   
+         </xmp:sourcedName>         
+      </xmp:Spring>
+   </xmp:spring>
+   <xmp:spring>
+      <xmp:Spring gml:id="ID_SPRING_3">
+         <xmp:w3cSource xlink:href="W3Cprov_dataset_level.xml#SC_USGS"/>
+         <xmp:w3cProces xlink:href="W3Cprov_dataset_level.xml#PS_WPS_1"/>
+         <xmp:position>
+            <gml:Point gml:id="ID_POS_3">
+               <gml:pos/>
+            </gml:Point>
+         </xmp:position>
+         <xmp:flow>4</xmp:flow>
+         <xmp:name>Platinum spring</xmp:name>
+      </xmp:Spring>
+   </xmp:spring>
+</xmp:SpringCollection>
