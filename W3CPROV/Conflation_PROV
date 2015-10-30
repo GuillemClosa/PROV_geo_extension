@@ -1,0 +1,250 @@
+@prefix f2n: <http://www.opengis.net/ogc/ows10/ows10-52n-ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix geos: <http://www.opengis.uab.es/provenance/geos-prov> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#>  .
+@prefix usgs_data:  <http://www.usgs.gov/projects/ows8> .
+@prefix nga_data:  <http://metadata.dod.mil/mdr/ns/GSIP/3.0/tds/3.0> .
+@prefix nga_conf:  <http://metadata.dod.mil/mdr/ns/GSIP/3.0/tds/3.0> .
+###################################################################
+#     FeatureCollections (Datasets) involved in the conflation process
+###################################################################
+
+nga_data:NGAMap a ows:FeatureCollection ;
+
+	 owl:sameAs <http://services.interactive-instruments.de/xsprojects/ows10/service/tds-dgiwg/wfs?service=WFS&version=1.1.0&request=GetFeature&namespaces=xmlns%28tds,http://metadata.dod.mil/mdr/ns/GSIP/3.0/tds/3.0%29&typename=tds:BuildingGeopoint&FILTER=%3CFilter%20xmlns%3D%22http%3A%2F%2Fwww.opengis.net%2Fogc%22%20xmlns%3Atds%3D%22http%3A%2F%2Fmetadata.dod.mil%2Fmdr%2Fns%2FGSIP%2F3.0%2Ftds%2F3.0%22%3E%3CPropertyIsEqualTo%3E%3CPropertyName%3Etds%3AfeatureFunction-1%3C%2FPropertyName%3E%3CLiteral%3Efirefighting%3C%2FLiteral%3E%3C%2FPropertyIsEqualTo%3E%3C%2FFilter%3E&outputFormat=text/xml;%20subtype=gml/3.2.1> .
+
+usgs_data:USGSMap a ows:FeatureCollection ;
+
+	 owl:sameAs <http://portal.cubewerx.com/cubewerx/projects/ows9/cubeserv.cgi?service=WFS&datastore=OWS9&request=GetFeature&typename=usgs:fireStationEmsStation&bbox=36.464,-122.003,36.714,-121.667> .
+
+nga_conf:ConflatedMap a ows:FeatureCollection ;
+
+	 prov:wasRevisionOf nga_data:NGAMap ;
+
+	 prov:generatedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
+###################################################################
+#    AttributeTypes involved in the conflation process
+###################################################################
+
+usgs_data:USGS_address rdfs:subClassOf ows:Property .
+
+usgs_data:USGS_name rdfs:subClassOf ows:Property .
+
+nga_conf:ConflatedMap_address rdfs:subClassOf ows:Property .
+
+nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName rdfs:subClassOf ows:Property .
+
+nga_conf:ConflatedMap_Position rdfs:subClassOf ows:Point .
+
+usgs_data:USGS_Position rdfs:subClassOf ows:Point .
+
+###################################################################
+#    FeatureTypes involved in the conflation process
+###################################################################
+
+nga_data:NGAFeature rdfs:subClassOf ows:Feature .
+
+usgs_data:USGSFeature rdfs:subClassOf ows:Feature .
+
+###################################################################
+#     Individual features of the datasets
+###################################################################
+
+nga_data:NGAMap 
+	 prov:hadMember nga_data:NGAFeature_StructurePoints_84356 ;
+	 prov:hadMember nga_data:NGAFeature_StructurePoints_84275 .
+
+usgs_data:USGSMap prov:hadMember usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 ;
+	 prov:hadMember usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 ;
+	  .
+
+usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 a usgs_data:USGSFeature ;
+	 ows:hadGeometry usgs_data:USGSPosition_10c80 ;
+	 ows:hadProperty usgs_data:USGS_address_f9acb ;
+	 ows:hadProperty usgs_data:USGS_name_6adb4 .
+
+usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 a usgs_data:USGSFeature ;
+	 ows:hadGeometry usgs_data:USGSPosition_ace94 ;
+	 ows:hadProperty usgs_data:USGS_address_b153f ;
+	 ows:hadProperty usgs_data:USGS_name_9dff6 .
+
+
+nga_data:NGAFeature_StructurePoints_84356 a nga_data:NGAFeature .
+
+nga_data:NGAFeature_StructurePoints_84275 a nga_data:NGAFeature .
+
+
+###################################################################
+#     Individual features of the result dataset
+###################################################################
+
+nga_conf:ConflatedMap
+	 prov:hadMember nga_conf:ConflatedMapFeature_StructurePoints_84356 ;
+	 prov:hadMember nga_conf:ConflatedMapFeature_StructurePoints_84275 ;
+	
+	 prov:hadMember nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 ;
+	 prov:hadMember nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84356 a nga_data:NGAFeature .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84275 a nga_data:NGAFeature .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 a nga_data:NGAFeature ;
+	 ows:hadGeometry nga_conf:ConflatedMap_Position_cf842 ;
+	 ows:hadProperty nga_conf:ConflatedMap_address_d662c ;
+	 ows:hadProperty nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_499d2 .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 a nga_data:NGAFeature ;
+	 ows:hadGeometry nga_conf:ConflatedMap_Position_c7728 ;
+	 ows:hadProperty nga_conf:ConflatedMap_address_fe642 ;
+	 ows:hadProperty nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_2d658 .
+
+###################################################################
+#    How Individual conflated features relate to sources
+###################################################################
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 prov:wasDerivedFrom usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 prov:wasDerivedFrom usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 .
+
+
+nga_conf:ConflatedMapFeature_StructurePoints_84356 owl:sameAs nga_data:NGAFeature_StructurePoints_84356 .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84275 owl:sameAs nga_data:NGAFeature_StructurePoints_84275 .
+
+###################################################################
+#    How Individual conflated feature properties relate to sources
+###################################################################
+
+nga_conf:ConflatedMap_Position_cf842 prov:wasDerivedFrom usgs_data:USGSPosition_10c80 .
+
+nga_conf:ConflatedMap_address_d662c prov:wasDerivedFrom usgs_data:USGS_address_f9acb .
+
+nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_499d2 prov:wasDerivedFrom usgs_data:USGS_name_6adb4 .
+
+nga_conf:ConflatedMap_Position_c7728 prov:wasDerivedFrom usgs_data:USGSPosition_ace94 .
+
+nga_conf:ConflatedMap_address_fe642 prov:wasDerivedFrom usgs_data:USGS_address_b153f .
+
+nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_2d658 prov:wasDerivedFrom usgs_data:USGS_name_9dff6 .
+
+
+###################################################################
+#    Relations between individual features and individual executions
+###################################################################
+
+f2n:52N_ConflationExecution_8c72d44edf 
+	 prov:used usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 ;
+
+	 prov:used usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 ;
+
+	 prov:used nga_data:NGAFeature_StructurePoints_84356 ;
+
+	 prov:used nga_data:NGAFeature_StructurePoints_84275.
+
+nga_conf:ConflatedMapFeature_StructurePoints_84356 prov:wasGeneratedBy f2n:52N_ConflationExecution_8c72d44edf .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84275 prov:wasGeneratedBy f2n:52N_ConflationExecution_8c72d44edf .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 prov:wasGeneratedBy f2n:52N_ConflationExecution_8c72d44edf .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 prov:wasGeneratedBy f2n:52N_ConflationExecution_8c72d44edf .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84356 prov:generatedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84275 prov:generatedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 prov:generatedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 prov:generatedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
+###################################################################
+#    Roles for individual executions and features
+###################################################################
+
+f2n:52N_ConflationExecution_8c72d44edf prov:qualifiedUsage [
+a prov:Usage ;
+prov:entity usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 ;
+prov:hadRole ows10:ReferencedMapSource ;
+] .
+
+f2n:52N_ConflationExecution_8c72d44edf prov:qualifiedUsage [
+a prov:Usage ;
+prov:entity usgs_data:USGSFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 ;
+prov:hadRole ows10:ReferencedMapSource ;
+] .
+
+f2n:52N_ConflationExecution_8c72d44edf prov:qualifiedUsage [
+a prov:Usage ;
+prov:entity nga_data:NGAFeature_StructurePoints_84356 ;
+prov:hadRole ows10:ReferencedMapSource ;
+] .
+
+f2n:52N_ConflationExecution_8c72d44edf prov:qualifiedUsage [
+a prov:Usage ;
+prov:entity nga_data:NGAFeature_StructurePoints_84275 ;
+prov:hadRole ows10:ReferencedMapSource ;
+] .
+nga_conf:ConflatedMapFeature_StructurePoints_84356 prov:qualifiedGeneration [
+a prov:Generation ;
+prov:actity f2n:52N_ConflationExecution_8c72d44edf ;
+prov:hadRole ows10:ConflatedMapOutput ;
+] .
+
+nga_conf:ConflatedMapFeature_StructurePoints_84275 prov:qualifiedGeneration [
+a prov:Generation ;
+prov:actity f2n:52N_ConflationExecution_8c72d44edf ;
+prov:hadRole ows10:ConflatedMapOutput ;
+] .
+
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000 prov:qualifiedGeneration [
+a prov:Generation ;
+prov:actity f2n:52N_ConflationExecution_8c72d44edf ;
+prov:hadRole ows10:ConflatedMapOutput ;
+] .
+
+nga_conf:ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_4_4D8777B2B990EA321F20020000 prov:qualifiedGeneration [
+a prov:Generation ;
+prov:actity f2n:52N_ConflationExecution_8c72d44edf ;
+prov:hadRole ows10:ConflatedMapOutput ;
+] .
+
+
+###################################################################
+#    Individual feature properties of the source datasets
+###################################################################
+
+usgs_data:USGSPosition_10c80 a usgs_data:USGS_Position .
+usgs_data:USGS_address_f9acb a usgs_data:USGS_address .
+usgs_data:USGS_name_6adb4 a usgs_data:USGS_name .
+
+usgs_data:USGSPosition_ace94 a usgs_data:USGS_Position .
+usgs_data:USGS_address_b153f a usgs_data:USGS_address .
+usgs_data:USGS_name_9dff6 a usgs_data:USGS_name .
+
+nga_conf:ConflatedMap_Position_cf842 a nga_conf:ConflatedMap_Position .
+nga_conf:ConflatedMap_address_d662c a nga_conf:ConflatedMap_address .
+nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_499d2 a nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName .
+
+nga_conf:ConflatedMap_Position_c7728 a nga_conf:ConflatedMap_Position .
+nga_conf:ConflatedMap_address_fe642 a nga_conf:ConflatedMap_address .
+nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName_2d658 a nga_conf:ConflatedMap_geoNameCollection_memberGeoName_fullName .
+
+###################################################################
+#                     Individual execution
+###################################################################
+
+f2n:52N_ConflationExecution_8c72d44edf a f2n:52N_WPSConflationExecution .
+
+f2n:52N_ConflationExecution_8c72d44edf prov:used f2n:Kinda_Generic_ConflationProcess_v120 .
+
+f2n:52N_ConflationExecution_8c72d44edf prov:startedAtTime "2014-03-18T09:09:17"^^xsd:dateTime ;
+
+	 prov:endedAtTime "2014-03-18T09:09:17"^^xsd:dateTime .
+
