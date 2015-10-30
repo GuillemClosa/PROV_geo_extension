@@ -2,7 +2,7 @@
 <!-- <?xml-stylesheet type="text/xsl" href="http://schemas.geoviqua.org/GVQ/3.0.0/stylesheets/GeoViQuaComponents-HTMLTable.xsl"?>  -->
 <gmd:MD_Metadata xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:gmd="http://www.isotc211.org/2005/gmd" xmlns:gco="http://www.isotc211.org/2005/gco" xmlns:gml="http://www.opengis.net/gml/3.2" xsi:schemaLocation="http://www.isotc211.org/2005/gmd ../../../iso/19139/20070417/gmd/gmd.xsd" id="USGS_dataset">
     <gmd:fileIdentifier >
-        <gco:CharacterString>USGS_dataset</gco:CharacterString>
+        <gco:CharacterString>USGSMap</gco:CharacterString>
     </gmd:fileIdentifier>
 	 <gmd:description>
 		<gco:CharacterString>U.S. Geological Survive</gco:CharacterString>
@@ -48,4 +48,3 @@
         </gmd:DQ_DataQuality>
     </gmd:dataQualityInfo>
 </gmd:MD_Metadata>
-
