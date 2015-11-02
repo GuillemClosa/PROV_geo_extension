@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xmp:ConflatedMap gml:id="Conflatedmap" xmlns:gml="http://www.opengis.net/gml/3.2" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:xmp="http://www.opengis.net/owc/1.0/examples/example1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.opengis.net/owc/1.0/examples/example1 spring_lineage.xsd">
-   <xmp:metadata xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml"/>
+   <xmp:metadata xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/conflated_dataset.xml"/>
    <xmp:conflatedfeature>
 		<xmp:ConflatedFeature gml:id="ConflatedMapFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000">
 			<xmp:source xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml#USGSMap"/>
