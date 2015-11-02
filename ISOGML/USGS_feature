@@ -6,20 +6,20 @@
 			<xmp:Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
 			<xmp:sourcedname>
 				<xmp:SourcedName>
-					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 					<xmp:name>USGS_name_6adb4</xmp:name>
 				</xmp:SourcedName>            
 			</xmp:sourcedname>            
 			<xmp:sourcedadress>
 				<xmp:SourcedAdress>
-					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 					<xmp:Adress>USGS_address_f9acb</xmp:Adress>
 				</xmp:SourcedAdress> 
 			</xmp:sourcedadress>			
 			<xmp:sourcedpossition> 
 				<xmp:SourcedPossition>
 					<xmp:position>
-						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 						<gml:Point gml:id="USGSPosition_10c80">
 							<gml:pos/>
 						</gml:Point>
@@ -33,20 +33,20 @@
 			<xmp:Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
 			<xmp:sourcedname>
 				<xmp:SourcedName>
-					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 					<xmp:name>USGS_name_9dff6</xmp:name>
 				</xmp:SourcedName>            
 			</xmp:sourcedname>            
 			<xmp:sourcedadress>
 				<xmp:SourcedAdress>
-					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+					<xmp:Adress_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 					<xmp:Adress>USGS_address_b153f</xmp:Adress>
 				</xmp:SourcedAdress> 
 			</xmp:sourcedadress>			
 			<xmp:sourcedpossition> 
 				<xmp:SourcedPossition>
 					<xmp:position>
-						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+						<xmp:Possition_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 						<gml:Point gml:id="USGSPosition_ace94">
 							<gml:pos/>
 						</gml:Point>
