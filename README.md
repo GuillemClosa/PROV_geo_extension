@@ -7,7 +7,6 @@ Is W3CPROV document which describes provenance at dataset, feature and attribute
 -->W3CPROVGML folder:
 Is the combination of the GML and W3CPROV to describe provenance at dataset, feature and attribute level. The W3CPROV document is serialized in XML and describes the dataset level, and the GML has the feature and attribute level.
 -->model
-Describes the Provenance ontology model in Notation (N3) serialization to describe the provenance in W3C-PROV provenance in RDF derived from WPS conflation execution between the U.S. Geological Survey (USGS) dataset with the National Geospatial-Intelligence Agency (NGA).  .
-serialization in https://github.com/GuillemClosa/PROV3/model.
+Describes the Provenance ontology model in Notation (N3) serialization to describe the provenance in W3C-PROV provenance in RDF derived from WPS conflation execution between the U.S. Geological Survey (USGS) dataset with the National Geospatial-Intelligence Agency (NGA).
 -->prov: 
 Provenance derived from the WPS conflation execution. 
