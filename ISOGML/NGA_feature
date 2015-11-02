@@ -3,12 +3,12 @@
    <xmp:metadata xlink:href="https://github.com/GuillemClosa/ISO_conflated_dataset.xml"/>
 	<xmp:conflatedfeature>
 		<xmp:ConflatedFeature gml:id="NGAFeature_StructurePoints_84356">
-			<xmp:Source xlink:href="https://github.com/GuillemClosa/NGAMap_dataset.xml"/>	
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/NGAMap.xml"/>	
 	</xmp:conflatedfeature>
 	
 	<xmp:conflatedfeature>
 		<xmp:ConflatedFeature gml:id="NGAFeature_StructurePoints_84275">
-			<xmp:Source xlink:href="https://github.com/GuillemClosa/NGAMap_dataset.xml"/>      
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/NGAMap.xml"/>      
 		</xmp:ConflatedFeature>		
 	</xmp:conflatedfeature>
 </xmp:NGAMap>
