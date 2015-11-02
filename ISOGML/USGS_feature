@@ -3,7 +3,7 @@
    <xmp:metadata xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
    <xmp:conflatedfeature>
 		<xmp:ConflatedFeature gml:id="USGSFeature_CWFID_ST_FIRE_STATION_0_7_4D877CAE6A6100961F20020000">
-			<xmp:Source xlink:href="https://github.com/GuillemClosa/USGSMap.xml"/>
+			<xmp:Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
 			<xmp:sourcedname>
 				<xmp:SourcedName>
 					<xmp:Name_Source xlink:href="https://github.com/GuillemClosa/PROV3/ISOGML/USGSMap.xml"/>
